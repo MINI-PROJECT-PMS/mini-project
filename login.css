@@ -1,0 +1,130 @@
+body{
+    border: 5px solid;
+    position: relative;
+    /* background-color: #08ffd1; */
+    width: 100%;
+    height: 60rem;
+}
+.st{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 700px;
+    width: 350px;
+    height: 450px;
+    
+}
+.login{
+    width: 310px;
+    height: 250px;
+    overflow: hidden;
+    margin: auto;
+    margin: 20 0 0 450px;
+    padding: 80px;
+    background: #23463f;
+    border-radius: 15px ;
+
+}
+h2{
+text-align: center;
+color: #277582;
+padding: 20px;
+}
+label{
+color: #08ffd1;
+font-size: 17px;
+}
+#Uname{
+width: 300px;
+height: 30px;
+border: none;
+border-radius: 3px;
+padding-left: 8px;
+}
+#Pass{
+width: 300px;
+height: 30px;
+border: none;
+border-radius: 3px;
+padding-left: 8px;
+
+}
+#log{
+width: 300px;
+height: 30px;
+border: none;
+border-radius: 17px;
+padding-left: 7px;
+color: blue;
+}
+#log:hover{
+    cursor: pointer;
+}
+span{
+color: white;
+font-size: 17px;
+}
+a{
+float: right;
+background-color: grey;
+}
+.user{
+    text-align: center;
+}
+.fa{
+    position: absolute;
+    margin-top: 250px;
+    width: 350px;
+    height: 450px;
+    margin-left: 700px;
+}
+.falogin{
+    width: 310px;
+    height: 250px;
+    overflow: hidden;
+    margin: auto;
+    margin: 20 0 0 450px;
+    padding: 80px;
+    background: #83ada6;
+    border-radius: 15px ;
+
+}
+#faUname{
+width: 300px;
+height: 30px;
+border: none;
+border-radius: 3px;
+padding-left: 8px;
+}
+#faPass{
+width: 300px;
+height: 30px;
+border: none;
+border-radius: 3px;
+padding-left: 8px;
+
+}
+#falog{
+width: 300px;
+height: 30px;
+border: none;
+border-radius: 17px;
+padding-left: 7px;
+color: rgb(156, 156, 165);
+}
+#falog:hover{
+    cursor: pointer;
+}
+span{
+color: white;
+font-size: 17px;
+}
+a{
+float: right;
+background-color: grey;
+}
+.user{
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
