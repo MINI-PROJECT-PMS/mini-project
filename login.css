@@ -1,17 +1,18 @@
 
  .hello{
-    /* position: absolute; */
-
-    margin-top: 105px;
-    margin-left: 1000px;
+    position: absolute;
+   top: 50px;
+   left: 100px;
+    margin-top: 230px;
+    margin-left: 900px;
     width: 350px;
     height: 450px;
     cursor: pointer;
  }  
 .login
 {
-    width: 300px;
-    height: 340px;
+    width: 400px;
+    height: 500px;
     overflow: hidden;
     padding: 35px;
     background-color: rgb(189, 197, 204);
@@ -68,8 +69,8 @@ span
 } */
 .falogin
 {
-    width: 300px;
-    height: 340px;
+    width: 400px;
+    height: 480px;
     overflow: hidden;
     padding: 35px;
     background-color: rgb(91, 159, 218);
@@ -116,7 +117,7 @@ span
 {
     display: none;
 }
-.stud
+.stud,.faculty
 {
     cursor: pointer;
 }
