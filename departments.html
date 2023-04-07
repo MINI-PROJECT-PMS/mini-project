@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <style>
+        body 
+        {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .mySlides 
+        {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="/index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+            <a href="#cse" class="w3-bar-item w3-button w3-padding-large">CSE</a>
+            <a href="#it" class="w3-bar-item w3-button w3-padding-large w3-hide-small">IT</a>
+            <a href="#ece" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ECE</a>
+            <a href="#eee" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EEE</a>
+            <a href="#mech" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MECH</a>
+            <a href="#civil" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CIVIL</a>
+            <a href="#auto" class="w3-bar-item w3-button w3-padding-large w3-hide-small">AUTO</a>
+            <a href="#mba" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MBA</a>
+            <a href="#mca" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MCA</a>
+            <!-- <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a> -->
+        </div>
+    </div>
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#cse" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CSE</a>
+    <a href="#it" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">IT</a>
+    <a href="#ece" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ECE</a>
+    <a href="#eee" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">EEE</a>
+    <a href="#mech" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Mechanical</a>
+    <a href="#civil" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Civil</a>
+    <a href="#auto" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Auto</a>
+    <a href="#mba" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MBA</a>
+    <a href="#mca" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MCA</a>
+
+  </div>
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:2000px;margin-top:46px"> 
+    <!-- CSE Department -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="cse">
+        <h2 class="w3-wide">Department Of Computer Science and Engineering</h2>
+        <p class="w3-opacity"><i>We love Programming</i></p>
+        <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="w3-row w3-padding-32">
+            <div class="w3-third">
+                <p>Name</p>
+                <img src="/unknown.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+            </div>
+            <div class="w3-third">
+                <p>Name</p>
+                <img src="/unknown.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+            </div>
+            <div class="w3-third">
+                <p>Name</p>
+                <img src="/unknown.jpg" class="w3-round" alt="Random Name" style="width:60%">
+            </div>
+        </div>
+    </div>
+    <!-- IT Department -->
+    <div class="w3-black" id="it">
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+        <h2 class="w3-wide w3-center">Department Of Information Technology</h2>
+        <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+        <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="w3-row w3-padding-32">
+                <div class="w3-third">
+                  <p>Name</p>
+                  <img src="/unknown.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+                </div>
+                <div class="w3-third">
+                  <p>Name</p>
+                  <img src="/unknown.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+                </div>
+                <div class="w3-third">
+                  <p>Name</p>
+                  <img src="/unknown.jpg" class="w3-round" alt="Random Name" style="width:60%">
+                </div>
+              </div>
+      </div>
+    </div>
+    <!-- ECE Department -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="ece">
+        <h2 class="w3-wide w3-center">Department Of Electronics and communication Engineering</h2>
+        <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+        <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="w3-row w3-padding-32">
+                <div class="w3-third">
+                  <p>Name</p>
+                  <img src="/unknown.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+                </div>
+                <div class="w3-third">
+                  <p>Name</p>
+                  <img src="/unknown.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+                </div>
+                <div class="w3-third">
+                  <p>Name</p>
+                  <img src="/unknown.jpg" class="w3-round" alt="Random Name" style="width:60%">
+                </div>
+              </div>
+    </div>
+<!-- EEE Department -->
+    <div class="w3-black" id="eee">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+          <h2 class="w3-wide w3-center">Department Of Electrical and Electronics Engineering</h2>
+          <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+          <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="w3-row w3-padding-32">
+                  <div class="w3-third">
+                    <p>Name</p>
+                    <img src="/unknown.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+                  </div>
+                  <div class="w3-third">
+                    <p>Name</p>
+                    <img src="/unknown.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+                  </div>
+                  <div class="w3-third">
+                    <p>Name</p>
+                    <img src="/unknown.jpg" class="w3-round" alt="Random Name" style="width:60%">
+                  </div>
+                </div>
+        </div>
+      </div>
+
+      <!-- Mechanical Department -->
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="mech">
+        <h2 class="w3-wide w3-center">Department Of Mechanical Engineering</h2>
+        <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+        <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="w3-row w3-padding-32">
+                <div class="w3-third">
+                  <p>Name</p>
+                  <img src="/unknown.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+                </div>
+                <div class="w3-third">
+                  <p>Name</p>
+                  <img src="/unknown.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+                </div>
+                <div class="w3-third">
+                  <p>Name</p>
+                  <img src="/unknown.jpg" class="w3-round" alt="Random Name" style="width:60%">
+                </div>
+              </div>
+    </div>
+
+    <!-- Civil Engineering -->
+    <div class="w3-black" id="civil">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center">Department Of Civil Engineering</h2>
+            <!-- <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br> -->
+            <p class="w3-justify">
+                <ul>
+                    <li style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">The Department, born with the institute 
+                        in 2002, has dedicated itself to improving quality education, academic excellence and developing both community oriented and 
+                        industry based research and consultancy.
+                    </li>
+                    <li style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">With full fledged laboratories, highly qualified 
+                        faculty,advanced equipments and testing machines and professional software, the department has been demonstrating 
+                        remarkable progress to achievement.
+                    </li>
+                    <li style="font-family: 'Times New Roman', Times, serif; font-size: 20px;"> Students who have passed out of the department 
+                        have shown merit and competence both in India and other countries.Our faculty members are presenting & publishing 
+                        papers regularly in reputed conferences and Journals. The departments have been successfully carrying out 
+                        sponsored seminars, conferences, non formal courses, and awareness programmes etc.
+                    </li>
+                    <li style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">The Department is conducting 
+                        B.E. Civil Engineering, M.E. Structural Engineering, M.E. Construction Engineering & Management and Ph.D., Programmes.
+                        The B.E. Civil Engineering course has been accredited by NBA.
+                    </li>
+                    <li style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">The department has well equipped laboratories 
+                        to meet the requirements of under and post graduate courses in Civil Engineering and also to facilitate consultancy 
+                        and material testing.The department as an approved research centre by Anna University, Chennai for conducting Ph.D programmes 
+                        and other research activities.
+                    </li>
+                </ul>
+            </p>
+            
+            
+            
+              <div class="w3-row w3-padding-32">
+                  <div class="w3-third">
+                    <p>Name</p>
+                    <img src="/unknown.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+                  </div>
+                  <div class="w3-third">
+                    <p>Name</p>
+                    <img src="/unknown.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+                  </div>
+                  <div class="w3-third">
+                    <p>Name</p>
+                    <img src="/unknown.jpg" class="w3-round" alt="Random Name" style="width:60%">
+                  </div>
+                </div>
+        </div>
+      </div>
+
+  <!-- End Page Content -->
+  </div>
+  <script>
+  // Automatic Slideshow - change image every 4 seconds
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+  }
+  
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+</body>
+</html>
+

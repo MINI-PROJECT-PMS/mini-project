@@ -1,79 +1,96 @@
-body
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body{ 
+    /* position: relative; */
+    margin-top: 20px;
+    /* background-image: url(img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-color: aliceblue;
+  /* overflow: hidden; */
+}
+h1
 {
-    margin-top: 25px;
-    background-color: lightsteelblue;
-    user-select: none;
-    letter-spacing: 5px;
-    font-family:sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.container
+{
+    /* position: relative;  */
+    display: flex;
 }
 .one
 {
-    background-color: lightcyan;
-   width: 100%;
-   height: 80px;
+    background-color: lightgreen;
+    width: 100%;
+    height: 43px;
+    text-align: center;
+    margin-top: 15px;
 }
-ul{
+ul
+{
     list-style-type: none;
     padding:0;
     margin:0;
     position: absolute;
 }
-ul li{
+ul li
+{
     float: left;
-    margin-top: 20px;
 }
-ul li a{
-    width: 150px;
+ul li a
+{
+    width: 220px;
     color:black;
     display: block;
     text-decoration:none;
     font-size: 20px;
     text-align: center;
-    padding:10px ;
-    border-radius: 10px;
+    padding:10px;
     font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
-a:hover{
-    /* background: lightblue; */
+a:hover
+{
+    background: white;
+    border-radius: 20px;
 }
-ul li ul{
-    background:lightblue;
+ul li ul
+{
+    background: lightsteelblue;
+    border-radius: 20px;
 }
-ul li ul li{
+ul li ul li
+{
     float: none;
 }
-ul li ul{
+ul li ul li{
  display: none;
 }
-ul li:hover ul{
+ul li:hover ul li{
     display: block;
 }
-.log{
-    margin-left: 10px;
-    margin-top: 350px;
- display: flex;
-gap: 10px;
- flex-direction:column;
-}
-/* ul
+.log1
 {
+position: absolute;
+margin-top: 380px;
+    margin-left: 1390px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+   background-color: transparent;
+    gap: 5%;
+    width: 50px;
+    height: 280px;
     text-align: center;
-    
-    font-size: 18px;
 }
- ul a
+.log1 a:hover
 {
-    text-decoration: none;
-    color: black;
+    background-color: rgb(16, 24, 24);
 }
- ul a:hover
-{
-    color: white;
-}
- li{
-    display: none;
-}
-.two li:hover li{
-    display: block;
-} */
