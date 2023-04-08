@@ -1,96 +1,122 @@
-*{
-    margin: 0;
-    padding: 0;
-    /* box-sizing: border-box; */
-}
-body{ 
-    /* position: relative; */
-    margin-top: 20px;
-    /* background-image: url(img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
-    background-color: aliceblue;
-  /* overflow: hidden; */
-}
-h1
-{
-    font-size: 30px;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-}
-.container
-{
-    /* position: relative;  */
-    display: flex;
-}
-.one
-{
-    background-color: lightgreen;
-    width: 100%;
-    height: 43px;
-    text-align: center;
-    margin-top: 15px;
-}
-ul
-{
-    list-style-type: none;
-    padding:0;
-    margin:0;
+.hello{
     position: absolute;
-}
-ul li
+   top: 50px;
+   left: 100px;
+    margin-top: 230px;
+    margin-left: 900px;
+    width: 350px;
+    height: 450px;
+    cursor: pointer;
+ }  
+.login
 {
-    float: left;
-}
-ul li a
-{
-    width: 220px;
-    color:black;
-    display: block;
-    text-decoration:none;
-    font-size: 20px;
-    text-align: center;
-    padding:10px;
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    padding: 35px;
+    background-color: rgb(189, 197, 204);
+    border-radius: 25px ;
+    /* position: absolute; */
     font-family: 'Times New Roman', Times, serif;
-    /* font-weight: bold; */
 }
-a:hover
+#Uname
 {
-    background: white;
-    border-radius: 20px;
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 8px;
 }
-ul li ul
+#Pass
 {
-    background: lightsteelblue;
-    border-radius: 20px;
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+
 }
-ul li ul li
+#log
 {
-    float: none;
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: black;
 }
-ul li ul li{
- display: none;
-}
-ul li:hover ul li{
-    display: block;
-}
-.log1
+#log:hover
 {
-position: absolute;
-margin-top: 380px;
-    margin-left: 1390px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-   background-color: transparent;
-    gap: 5%;
-    width: 50px;
-    height: 280px;
+    cursor: pointer;
+}
+span
+{
+    color: black;
+    font-size: 17px;
+}
+.user
+{
     text-align: center;
 }
-.log1 a:hover
+/* .fa
 {
-    background-color: rgb(16, 24, 24);
+    position: absolute;
+    margin-top: 105px;
+    margin-left: 750px;
+    width: 350px;
+    height: 450px;
+} */
+.falogin
+{
+    width: 400px;
+    height: 480px;
+    overflow: hidden;
+    padding: 35px;
+    background-color: rgb(91, 159, 218);
+    border-radius: 25px ;
+    /* position: absolute; */
+    font-family: 'Times New Roman', Times, serif;
+}
+#faUname
+{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#faPass
+{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#falog
+{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: black;
+    cursor: pointer;
+}
+span
+{
+    color: black;
+    font-size: 17px;
+}
+.user
+{
+    text-align: center;
+}
+.hidden
+{
+    display: none;
+}
+.stud,.faculty
+{
+    cursor: pointer;
 }
