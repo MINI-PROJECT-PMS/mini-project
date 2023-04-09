@@ -79,7 +79,7 @@ const firebaseConfig = {
                 user_address:document.querySelector('#address').value
             })
         }
-            // alert('successfully logined');
+            alert('successfully logined');
        
         }
         // console.log(detail);
