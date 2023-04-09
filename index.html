@@ -1,4 +1,4 @@
-v<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>PMS</title>
@@ -37,15 +37,11 @@ v<!DOCTYPE html>
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
       <div class="w3-bar w3-white w3-card" id="myNavbar">
-        <a href="#home" class="w3-bar-item w3-button w3-wide" style="position: relative;" id="click">LOGIN</a>
-        <div class="hi hidden" style="position: absolute; top: 100%; font-size: 20px;">
-          <label class="stud ">student</label><br>
-          <label class="faculty">teacher</label>
-        </div>
+        <a href="#" class="w3-bar-item w3-button w3-wide" style="position: relative;" id="click">LOGIN</a>
         <!-- Right-sided navbar links -->
         <div class="w3-right w3-hide-small">
           <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-          <a href="#team" class="w3-bar-item w3-button">RECRUITMENT</a>
+          <a href="#team" class="w3-bar-item w3-button">RECRUITERS</a>
           <a href="department.html" class="w3-bar-item w3-button">DEPARTMENTS</a>
           <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
         </div>
@@ -59,7 +55,8 @@ v<!DOCTYPE html>
     <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
       <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
       <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Recruitment</a>
+      <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">RECRUITERS</a>
+      <a href="department.html" onclick="w3_close()" class="w3-bar-item w3-button">DEPARTMENT</a>
       <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
     </nav>
     <!-- Header with full-height image -->
@@ -71,49 +68,36 @@ v<!DOCTYPE html>
           Learn more and start your career today</a>
         </p>
     </header>
-    <!-- About Section -->
+    <!-- Login Section -->
     <div class="hello">
       <div class="st hi ">
         <div class="login hidden hi ">
           <form id="login">
-            <b class="close1" style="margin-left: 290px;">
-              <i class="fa fa-sharp fa-light fa-rectangle-xmark" style="font-size: 25px;color: rgb(231, 225, 225);"></i>
+            <b class="close1" style="margin-left: 300px;">
+              <i class="fa fa-sharp fa-light fa-rectangle-xmark" style="font-size: 25px;color: rgb(12, 13, 14);"></i>
             </b>
+            <p><center><u><b class="hi">Login</b></u></center></p>
             <p><b class="hi">Username</b></p>
             <input type="text" name="Uname" id="Uname" class="hi"placeholder="Username">
-            <!-- <br><br> -->
             <p><b class="hi">Password</b></p>
             <input type="Password" name="Pass" id="Pass" class="hi"placeholder="Password">
+            <p><b class="hi">Role</b></p>
+            <select name="role" id="role" style="font-size: 20px;">
+              <option value="">--user--</option>
+              <option value="admin">Admin</option>
+              <option value="faculty">Faculty</option>
+              <option value="stud">Student</option>
+            </select><br><br>
+            <input type="submit" name="log" id="log" class="hi" value="Log In Here">
             <br><br>
-            <input type="button" name="log" id="log" class="hi" value="Log In Here">
-            <br><br>
-            <input type="checkbox" class="hi"id="check">
-            <span class="hi">Remember me</span><br>
+            <!-- <input type="checkbox" class="hi"id="check">
+            <span class="hi">Remember me</span><br> -->
             <label> create account<a href="register.html">sign up</a></label>
           </form>
         </div>
       </div>
-      <div class="fa hi">
-        <div class=" falogin hidden hi ">
-          <form id="falogin ">
-            <b class="close2" style="margin-left: 290px;">
-              <i class="fa fa-sharp fa-light fa-rectangle-xmark" style="font-size: 25px;color: rgb(243, 235, 235);"></i>
-            </b>
-            <p><b class="hi" >Username</b></p><br>
-            <input type="text" name="Uname" id="faUname" class="hi" placeholder="Username">
-            <br><br>
-            <p><b class="hi">Password</b></p><br>
-            <input type="Password" name="Pass" id="faPass" class="hi" placeholder="Password">
-            <br><br><br>
-            <input type="button" name="log" id="falog" class="hi"value="Log In Here">
-            <br><br>
-            <input type="checkbox" class="hi"id="facheck">
-            <span class="hi">Remember me</span>
-            <label> create account<a href="register.html">sign up</a></label>
-          </form>
-        </div>
-      </div>
-    </div> 
+    </div>
+     <!-- About Section -->
     <div class="w3-container" style="padding:128px 16px" id="about">
       <h3 class="w3-center">ABOUT THE COMPANY</h3>
       <p class="w3-center w3-large">Key features of our company</p>
@@ -121,7 +105,7 @@ v<!DOCTYPE html>
         <div class="w3-quarter">
           <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
           <p class="w3-large">Responsive</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.      </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
         </div>
         <div class="w3-quarter">
           <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
