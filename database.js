@@ -20,6 +20,7 @@ const firebaseConfig = {
   detail.push(a);
   });
   });
+//   if()console.log('hi');
   const gender=function(){
     var selectgender = document.querySelector("#gender");
    var selectedgenderValue = selectgender.options[selectgender.selectedIndex].value;
@@ -62,10 +63,7 @@ const firebaseConfig = {
             else if(document.querySelector('#email').value=="") alert('Useremail field is empty');
             else if(degree()=="") alert('UserDegree field is empty');
             else if(gender()=="") alert('usergender field is empty');
-            else if(document.querySelector('.dep')){
-                if(document.querySelector('.dep').checked) console.log(document.querySelector('input[name="dep"]:checked').value);
-                else alert('userdepartment field is empty');
-            }
+            else if(document.querySelector('.dep').checked=="")alert('userdepartment field is empty');
             else if(document.querySelector('#address').value=="") alert('useraddress field is empty');
             else{ 
            var push=user_database.push();
@@ -81,7 +79,8 @@ const firebaseConfig = {
                 user_address:document.querySelector('#address').value
             })
         }
-            // alert('successfully logined');
+            alert('successfully logined');
+       
         }
         // console.log(detail);
 });
