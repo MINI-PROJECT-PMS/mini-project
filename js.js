@@ -8,5 +8,5 @@ document.querySelector('#click').addEventListener('click',function()
 const body =document.querySelector('.close1');
 body.addEventListener('click',function()
 {
-    login1.classList.add('hidden');    
+    login1.classList.add('hidden');
 })

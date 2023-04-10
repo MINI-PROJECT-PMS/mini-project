@@ -1,125 +1,118 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Student Registration Form</title>
-<style>
-body {
-    margin: 0;
-background-color: #f1f1f1;
-}
-.registration-box {
-width: 500px;
-background-color: #fff;
-margin: 50px auto;
-padding: 80px;
-border-radius: 10px;
-box-shadow: 0px 0px 20px 10px rgba(34, 33, 33, 0.2);
-}
-
-h1 {
-text-align: center;
-margin-bottom: 30px;
-}
-
-label {
-display: block;
-margin-bottom: 10px;
-font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="date"],
-textarea {
-width: 100%;
-padding: 10px;
-border-radius: 5px;
-border: none;
-margin-bottom: 20px;
-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-}
-
-select {
-width: 100%;
-padding: 10px;
-border-radius: 5px;
-border: none;
-margin-bottom: 20px;
-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-}
-
-input[type="submit"] {
-width: 100%;
-padding: 10px;
-border-radius: 5px;
-border: none;
-background-color: #4CAF50;
-color: #fff;
-font-size: 16px;
-font-weight: bold;
-cursor: pointer;
-transition: all 0.3s ease;
-}
-
-input[type="submit"]:hover {
-background-color: #3e8e41;
-}
-
-</style>
-<script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script>
-    <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js"></script>
-</head>
-<body>
-    <form>
-<div class="registration-box">
-   
-<h1>Student Registration Form</h1>
-<label>Register.No</label>
-<input type="text" id="Reg" name="register" placeholder="Enter Your Register.No">
-<label for="name">Name</label>
-<input type="text" id="name" name="name" placeholder="Enter Your Name">
-
-<label for="email">Email</label>
-<input type="email" id="email" name="email" placeholder="Enter Your Email">
-
-<label for="password">Password</label>
-<input type="password" id="password" name="password" placeholder="Enter Password">
-
-<label for="dob">Date of Birth</label>
-<input type="date" id="dob" name="dob">
-
-<label for="gender">Gender</label>
-<select id="gender" name="gender">
-    <option value="">Select</option>
-<option value="male">Male</option>
-<option value="female">Female</option>
-<option value="other">Other</option>
-</select>
-<label>Qualification :</label>
-<select name="Qualification" id="degree">
-    <option value="">Select</option>
-    <option value="B.E">B.E</option>
-    <option value="B.Tech">B.Tech</option>
-    <option value="M.C.A">M.C.A</option> 
-    <option value="M.E">M.E</option>
-</select>
-<label>Departments :</label>
-<input type="radio" name="dep" value ="CSE" class="dep">CSE<br>
-<input type="radio" value="ECE" name="dep" class="dep">ECE<br>
-<input type="radio" value="MECH" name="dep"class="dep">MECH<br>
-<input type="radio" value="IT" name="dep" class="dep">IT<br>
-<input type="radio" value="EEE" name="dep" class="dep">EEE<br>
-<input type="radio" value="CIVIL" name="dep" class="dep">CIVIL<br><br>
-
-<label for="address">Address</label>
-<textarea id="address" name="address" placeholder="Enter Your Address"></textarea>
-
-<input type="submit" value="Register" class="sumbit">
-
-</div>
-</form>
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-<script src="database.js"></script>
+    <head>
+        <title>Student Registration Form</title>
+        <style>
+            body 
+            {
+                margin: 0;
+                background-color: #f1f1f1;
+            }
+            .registration-box 
+            {
+                width: 500px;
+                background-color: #fff;
+                margin: 50px auto;
+                padding: 80px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 20px 10px rgba(34, 33, 33, 0.2);
+            }
+            h1 
+            {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            label 
+            {
+                display: block;
+                margin-bottom: 10px;
+                font-weight: bold;
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="password"],
+            input[type="date"],
+            textarea 
+            {
+                width: 100%;
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+                margin-bottom: 20px;
+                box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+            }
+            select 
+            {
+                width: 100%;
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+                margin-bottom: 20px;
+                box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+            }
+            input[type="submit"] 
+            {
+                width: 100%;
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+                background-color: #4CAF50;
+                color: #fff;
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+            input[type="submit"]:hover 
+            {
+                background-color: #3e8e41;
+            }
+        </style>
+        <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script>
+        <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js"></script>
+    </head>
+    <body>
+        <form>
+            <div class="registration-box">
+                <h1>Student Registration Form</h1>
+                <label>Register.No</label>
+                <input type="text" id="Reg" name="register" placeholder="Enter Your Register.No">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <label>Qualification :</label>
+                <select name="Qualification" id="degree">
+                    <option value="">Select</option>
+                    <option value="B.E">B.E</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="M.C.A">M.C.A</option> 
+                    <option value="M.E">M.E</option>
+                </select>
+                <label>Departments :</label>
+                <input type="radio" name="dep" value ="CSE" class="dep">CSE<br>
+                <input type="radio" value="ECE" name="dep" class="dep">ECE<br>
+                <input type="radio" value="MECH" name="dep"class="dep">MECH<br>
+                <input type="radio" value="IT" name="dep" class="dep">IT<br>
+                <input type="radio" value="EEE" name="dep" class="dep">EEE<br>
+                <input type="radio" value="CIVIL" name="dep" class="dep">CIVIL<br><br>
+                <label for="address">Address</label>
+                <textarea id="address" name="address" placeholder="Enter Your Address"></textarea>
+                <input type="submit" value="Register" class="sumbit">
+            </div>
+        </form>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="database.js"></script>
 </html>
