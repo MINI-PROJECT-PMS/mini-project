@@ -22,7 +22,7 @@
     height: 550px;
     overflow: hidden;
     padding: 35px;
-    background-color: rgb(126, 178, 223);
+    background-color: aliceblue;
     border-radius: 25px ;
     position: absolute;
     font-family: 'Times New Roman', Times, serif;
@@ -48,15 +48,16 @@
 #log
 {
     width: 300px;
-    height: 30px;
-    border: none;
+    /* height: 30px; */
+    border: 1px solid black;
     border-radius: 17px;
-    padding-left: 7px;
+    /* padding-left: 7px; */
     color: black;
 }
 #log:hover
 {
     cursor: pointer;
+    background-color: aliceblue;
 }
 span
 {
