@@ -84,6 +84,7 @@ const firebaseConfig = {
         }
         // console.log(detail);
 });
+
 //     console.log(document.querySelector('input[name="dep"]:checked').value);
 //     // console.log(document.querySelector("#degree").textContent);
  

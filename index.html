@@ -32,6 +32,8 @@
         padding: 16px;
       }
     </style>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js"></script>
   </head>
   <body>
     <!-- Navbar (sit on top) -->
@@ -72,7 +74,7 @@
     <div class="hello">
       <div class="st hi ">
         <div class="login hidden hi ">
-          <form id="login">
+          <!-- <form id="login"> -->
             <b class="close1" style="margin-left: 300px;">
               <i class="fa fa-sharp fa-light fa-rectangle-xmark" style="font-size: 25px;color: rgb(12, 13, 14);"></i>
             </b>
@@ -88,12 +90,12 @@
               <option value="faculty">Faculty</option>
               <option value="stud">Student</option>
             </select><br><br>
-            <input type="submit" name="log" id="log" class="hi" value="Log In Here">
+            <button id="log" class="hi">Log In Here</button>
             <br><br>
             <!-- <input type="checkbox" class="hi"id="check">
             <span class="hi">Remember me</span><br> -->
             <label> create account<a href="register.html">sign up</a></label>
-          </form>
+          <!-- </form> -->
         </div>
       </div>
     </div>
@@ -206,5 +208,7 @@
       }
     </script>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
   <script src="js.js"></script>
+  <!-- <script src="database.js"></script> -->
 </html>
