@@ -33,7 +33,7 @@ body.addEventListener('click',function()
 })
 document.querySelector('#log').addEventListener('click',function(){
     let c1=0;
-    
+    console.log('hi');
     for(let i=0;i<detail.length;i++){
     if(detail[i].register_no==document.querySelector('#Uname').value){
       if (detail[i].userpassword==document.querySelector('#Pass').value){
@@ -41,13 +41,6 @@ document.querySelector('#log').addEventListener('click',function(){
       }
 }
     }
-<<<<<<< HEAD
 if(c1==1)        window.location.assign('http://127.0.0.1:5500/student.html');
-=======
-if(c1==1)  {      window.location.assign('https://dribbble.com/tags/student_profile');
-login1.classList.add('hidden');   
-document.querySelector('#Uname').value=""; 
-  }
->>>>>>> 9762ee8f6e9b71bc6c59dfe774952c6b7066ea2e
 else alert('wrong password')
   })
