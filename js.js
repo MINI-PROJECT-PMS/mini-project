@@ -41,6 +41,6 @@ document.querySelector('#log').addEventListener('click',function(){
       }
 }
     }
-if(c1==1)        window.location.assign('http://127.0.0.1:5500/student.html');
+if(c1==1)        window.location.replace('student.html');
 else alert('wrong password')
   })
