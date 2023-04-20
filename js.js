@@ -33,7 +33,7 @@ body.addEventListener('click',function()
 })
 document.querySelector('#log').addEventListener('click',function(){
     let c1=0;
-    console.log('hi');
+//     console.log('hi');
     for(let i=0;i<detail.length;i++){
     if(detail[i].register_no==document.querySelector('#Uname').value){
       if (detail[i].userpassword==document.querySelector('#Pass').value){
@@ -41,6 +41,12 @@ document.querySelector('#log').addEventListener('click',function(){
       }
 }
     }
-if(c1==1)        window.location.replace('student.html');
-else alert('wrong password')
+if(c1==1)
+    window.location.replace('student.html');
+else 
+{
+    alert('wrong password');
+    document.querySelector('#Uname').value = "";
+    login1.classList.add('hidden');  
+}
   })
