@@ -42,11 +42,13 @@ document.querySelector('#log').addEventListener('click',function(){
 }
     }
 if(c1==1)
+{
     window.location.replace('student.html');
+}
 else 
 {
-    alert('wrong password');
     document.querySelector('#Uname').value = "";
-    login1.classList.add('hidden');  
+    login1.classList.add('hidden');
+    alert('wrong password');
 }
   })
