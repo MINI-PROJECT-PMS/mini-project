@@ -33,7 +33,9 @@ body.addEventListener('click',function()
 })
 document.querySelector('#log').addEventListener('click',function(){
     let c1=0;
+    console.log(Role());
 //     console.log('hi');
+if(Role()=="stud"){
     for(let i=0;i<detail.length;i++){
     if(detail[i].register_no==document.querySelector('#Uname').value){
       if (detail[i].userpassword==document.querySelector('#Pass').value){
@@ -51,4 +53,13 @@ else
     login1.classList.add('hidden');
     alert('wrong password');
 }
+}
+else{
+  alert("user wrong");
+}
   })
+  const Role=function(){
+    var selectElement = document.querySelector("#role");
+   var selectedOptionValue = selectElement.options[selectElement.selectedIndex].value;
+   return selectedOptionValue;
+  }
