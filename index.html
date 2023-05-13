@@ -31,6 +31,14 @@
       {
         padding: 16px;
       }
+      .one
+      {
+        height: 200px;
+        width: 190px;
+        border-radius: 200%;
+        border: 2px solid white;
+        box-shadow: 0 0 15px black;
+      }
     </style>
     <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script>
     <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js"></script>
@@ -42,7 +50,7 @@
         <a href="#" class="w3-bar-item w3-button w3-wide" style="position: relative;" id="click">LOGIN</a>
         <!-- Right-sided navbar links -->
         <div class="w3-right w3-hide-small">
-          <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+          <a href="#about" class="w3-bar-item w3-button">ABOUT US</a>
           <a href="#team" class="w3-bar-item w3-button">RECRUITERS</a>
           <a href="department.html" class="w3-bar-item w3-button">DEPARTMENTS</a>
           <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
@@ -56,7 +64,7 @@
     <!-- Sidebar on small screens when clicking the menu icon -->
     <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
       <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close <b>X</b></a>
-      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
       <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">RECRUITERS</a>
       <a href="department.html" onclick="w3_close()" class="w3-bar-item w3-button">DEPARTMENT</a>
       <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
@@ -65,7 +73,6 @@
     <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home" style="position: relative;">
       <div class="w3-display-left w3-text-white" style="padding:48px">
         <span class="w3-jumbo w3-hide-small" style="color: black; font-size: 5px;">Placement Management System</span><br>
-        <!-- <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span> -->
         <p><a href="#" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">
           Learn more and start your career today</a>
         </p>
@@ -74,7 +81,6 @@
     <div class="hello">
       <div class="st hi ">
         <div class="login hidden hi ">
-          <!-- <form id="login"> -->
             <b class="close1" style="margin-left: 300px;">
               <i class="fa fa-sharp fa-light fa-rectangle-xmark" style="font-size: 25px;color: black;"></i>
             </b>
@@ -92,37 +98,29 @@
             </select><br><br>
             <button id="log" class="hi">Log In Here</button>
             <br><br>
-            <!-- <input type="checkbox" class="hi"id="check">
-            <span class="hi">Remember me</span><br> -->
             <label> create account<a href="register.html">sign up</a></label>
-          <!-- </form> -->
         </div>
       </div>
     </div>
      <!-- About Section -->
     <div class="w3-container" style="padding:128px 16px" id="about">
-      <h3 class="w3-center">ABOUT THE COMPANY</h3>
-      <p class="w3-center w3-large">Key features of our company</p>
+      <h3 class="w3-center">ABOUT US</h3>
+      <!-- <p class="w3-center w3-large">Key features of our company</p> -->
       <div class="w3-row-padding w3-center" style="margin-top:64px">
         <div class="w3-quarter">
-          <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-          <p class="w3-large">Responsive</p>
-          <p>Easily Interact with us to </p>
+          <img class="one" src="images/nithin.jpg">
+          <p class="w3-large">NITHINKUMAR SR</p>
+          <h3><b>Fullstack Developer</b></h3>
         </div>
         <div class="w3-quarter">
-          <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-          <p class="w3-large">Passion</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          <img class="one" src="images/sakthi.jpg">
+          <p class="w3-large">SAKTHIVEL T</p>
+          <h3><b>Frontend Developer & Fullstack Developer</b></h3>
         </div>
         <div class="w3-quarter">
-          <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-          <p class="w3-large">Design</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-        </div>
-        <div class="w3-quarter">
-          <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-          <p class="w3-large">Support</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          <img class="one" src="images/shankar.jpg">
+          <p class="w3-large">SHANKAR S</p>
+          <h3><b>Frontend Developer</b></h3>
         </div>
       </div>
     </div>
@@ -134,7 +132,6 @@
       <img src="images/zoho.png" style="height: 125px;" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <img src="images/Cognizant.png" style="height: 50px;" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <img src="images/aspiresystem.jpg" style="height: 125px;" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <!-- <img src="images/shankar.jpg" style="height: 125px;" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
     </marquee>
   </div>
     <!-- Modal for full size images on click-->
@@ -210,5 +207,4 @@
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
   <script src="js.js"></script>
-  <!-- <script src="database.js"></script> -->
 </html>
