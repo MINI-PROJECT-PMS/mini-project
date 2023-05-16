@@ -52,7 +52,7 @@ const firebaseConfig = {
       link.target = '_blank';
       link.innerHTML = item.name;
       console.log(item.name);
-      if(localStorage.getItem("pdf")==item.name)document.getElementById('pdf-container').appendChild(link);
+      if(`${localStorage.getItem("name")}.pdf`==item.name)document.getElementById('pdf-container').appendChild(link);
       
     }).catch(function(error) {
       console.log(error);
