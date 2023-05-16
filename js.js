@@ -51,6 +51,8 @@ if(Role()=="stud"){
     }
 if(c1==1)
 {
+
+  localStorage.setItem("name",document.querySelector('#Uname').value);
     window.location.replace('student.html');
 }
 else 
@@ -68,6 +70,7 @@ for(let i=0;i<fact_detail.length;i++){
   }
 }
 if(c1==1){
+  localStorage.setItem("name",document.querySelector('#Uname').value);
   window.location.replace('faculty.html');
 }
 else{
