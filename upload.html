@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload </title>
+    <link rel="stylesheet" href="upload.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-storage.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>Resume Upload </header>
+        <form action="#">
+            <input type="file"  id="pdf-file"class="file-input " >
+            <i class="fas fa-cloud-upload-alt"></i>
+        <p>Browse File to Upload</p>
+        <button type="button" onclick="uploadPdf()">Upload</button>
+        <button type="button" class="btn">View</button>
+        </form>
+         <section class="progress-area">
+        </section>
+         <section class="uploaded-area">
+         
+    </section> 
+    <!-- <form>
+        <input type="file" id="pdf-file">
+        <button type="button" onclick="uploadPdf()">Upload</button>
+      </form>
+       -->
+      
+
+
+      <section class="progress-area">
+        <!-- <li class="row">
+            <i class="fas fa-file-alt"></i>
+            <div class="content">
+                <div class="details">
+                    <span class="name">image.uploading</span>
+                    <span class="percent">100%</span>
+                    </div>
+                    <div class="progress-bar">
+                    <div class="progress"></div>
+            </div>
+                    </div>
+        </li> -->
+      </section>
+    <section class="upload-area">
+        <!-- <li class="row">
+            <i class="fas fa-file-alt"></i>
+            <div class="content"></div>
+                <div class="details">
+                    <span class="name">image.uploading</span>
+                    <span class="percent">70kb</span>
+                </div>
+                <i class="fas fa-check"></i>
+            </div>
+        
+        </li> -->
+    </section>
+
+
+
+
+     <!-- <button class="btn">view</button> -->
+     <div id="pdf-container"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="upload.js"></script>
+</body>
+</html>
