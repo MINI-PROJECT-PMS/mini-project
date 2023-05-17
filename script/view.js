@@ -35,7 +35,7 @@ const firebaseConfig = {
 
 
   var storageRef = firebase.storage().ref();
-
+ console.log(`${localStorage.getItem("name")}.pdf`);
   storageRef.listAll().then(function(result) {
     result.items.forEach(function(item) {
       if (item.name.endsWith('.pdf')) {
