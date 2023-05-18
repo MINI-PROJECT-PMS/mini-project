@@ -76,6 +76,7 @@ const firebaseConfig = {
     // Upload the file to Firebase Storage
     var pdfRef = storageRef.child(file.name);
     pdfRef.put(file).then(function(snapshot) {
+      alert("PDF uploaded successfully!");
       console.log("PDF uploaded successfully!");
     });
   }
